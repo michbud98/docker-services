@@ -15,7 +15,9 @@ services:
       - '8090:80'
 
   nginx-wireshark:
-    build: .
+    build: 
+      context: ./wireshark_wpa_psk
+      dockerfile: Dockerfile
     image: michbud98/wireshark_psk:0.1
     container_name: wireshark-psk
     restart: always
