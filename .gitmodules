@@ -1,0 +1,3 @@
+[submodule "ASCII-Generator"]
+	path = ASCII-Generator
+	url = git@github.com:michbud98/ASCII-Generator.site.git

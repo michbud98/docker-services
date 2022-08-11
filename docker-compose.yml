@@ -1,6 +1,5 @@
 version: "3.6"
 services:
-
   nginx-crontab-guru:
     build: ./crontab-guru
     image: flavienb/crontab.guru-docker:20201202
@@ -41,6 +40,15 @@ services:
     ports:
       - "8092:80"
 
+  nginx-ascii:
+    build: 
+      context: ./ASCII-Generator
+      dockerfile: Dockerfile
+    image: michbud98/ascii-generator
+    container_name: ascii-generator
+    restart: always
+    ports:
+      - '8093:8091'
 networks:
   default:
     driver: bridge
