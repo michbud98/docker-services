@@ -28,18 +28,6 @@ services:
     ports:
       - '8091:80'
 
-  # nginx-countdown:
-  #  restart: always
-  #  build: 
-  #    context: ./JS-countdown
-  #    dockerfile: Dockerfile
-  #  container_name: nginx-countdown
-  #  image: michbud98/nginx-countdown
-  #  volumes:
-  #      - ./JS-countdown/index.html:/usr/share/nginx/html/index.html
-  #  ports:
-  #    - "8092:80"
-
   nginx-ascii:
     build: 
       context: ./ASCII-Generator
