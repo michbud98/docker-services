@@ -12,7 +12,7 @@ services:
     build: 
       context: ./wireshark_wpa_psk
       dockerfile: Dockerfile
-    image: michbud98/wireshark_psk:0.1
+    image: michbud98/wireshark_psk:20240428
     container_name: wireshark-psk
     restart: always
     ports:
