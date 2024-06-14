@@ -27,3 +27,6 @@ Temporary Items
 
 #git files
 .git
+
+# htpasswd file
+htpasswd
