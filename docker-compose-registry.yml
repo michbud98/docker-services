@@ -1,0 +1,26 @@
+services:
+  registry:
+    restart: always
+    build: 
+      context: $HOME/Docker-Projects/docker-services/docker-registry
+      dockerfile: Dockerfile
+    image: michbud-registry:2
+    ports:
+      - 5000:5000
+    environment:
+      REGISTRY_AUTH: htpasswd
+      REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
+      REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
+    volumes:
+      - registry_data:/var/lib/registry
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+    name: Registry
+
+volumes:
+  registry_data:
+
