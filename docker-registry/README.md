@@ -4,5 +4,5 @@
 
 ```sh
 mkdir -p auth
-docker run --entrypoint htpasswd httpd:2 -Bbn user password > auth/htpasswd
+docker run -rm --entrypoint htpasswd httpd:2 -Bbn user password > auth/htpasswd
 ```
