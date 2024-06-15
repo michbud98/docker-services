@@ -1,4 +1,3 @@
-version: "3.6"
 services:
   nginx-crontab-guru:
     build: /home/pi/Docker-Projects/docker-services/crontab-guru
