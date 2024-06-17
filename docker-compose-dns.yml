@@ -1,0 +1,33 @@
+services:
+  dns-server:
+    container_name: dns-server
+    hostname: ${DNS_SERVER_DOMAIN}
+    # Image Dockerhub link: https://hub.docker.com/r/technitium/dns-server
+    image: technitium/dns-server:latest
+    restart: unless-stopped
+    # For DHCP deployments, use "host" network mode and remove all the port mappings, including the ports array by commenting them
+    # network_mode: "host"
+    ports:
+      - "5380:5380/tcp" #DNS web console (HTTP)
+      # - "53443:53443/tcp" #DNS web console (HTTPS)
+      - "53:53/udp" #DNS service
+      - "53:53/tcp" #DNS service
+      # - "853:853/udp" #DNS-over-QUIC service
+      # - "853:853/tcp" #DNS-over-TLS service
+      # - "443:443/udp" #DNS-over-HTTPS service (HTTP/3)
+      # - "443:443/tcp" #DNS-over-HTTPS service (HTTP/1.1, HTTP/2)
+      # - "80:80/tcp" #DNS-over-HTTP service (use with reverse proxy or certbot certificate renewal)
+      # - "8053:8053/tcp" #DNS-over-HTTP service (use with reverse proxy)
+      # - "67:67/udp" #DHCP service
+
+    # Available environment variables
+    # https://github.com/TechnitiumSoftware/DnsServer/blob/master/DockerEnvironmentVariables.md
+    # !!! IMPORTANT: You need to at least specify the DNS_SERVER_DOMAIN environment variable to run the container !!!
+    env_file: stack.env # Environment variables file for Portainer
+    volumes:
+      - config:/etc/dns
+    sysctls:
+      - net.ipv4.ip_local_port_range=1024 65000
+ 
+volumes:
+    config:
