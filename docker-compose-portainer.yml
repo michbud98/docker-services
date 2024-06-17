@@ -4,6 +4,7 @@ services:
     image: flavienb/crontab.guru-docker:20201202
     container_name: crontab-guru
     restart: unless-stopped
+    # host_port:container_port/protocol
     ports:
       - '8090:80'
 
