@@ -1,11 +1,11 @@
 services:
   registry:
-    restart: always
     build: 
       context: $HOME/Docker-Projects/docker-services/docker-registry
       dockerfile: Dockerfile
     image: michbud-registry:2
     container_name: registry
+    restart: unless-stopped
     ports:
       - 5000:5000
     environment:

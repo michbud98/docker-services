@@ -3,7 +3,7 @@ services:
     build: /home/pi/Docker-Projects/docker-services/crontab-guru
     image: flavienb/crontab.guru-docker:20201202
     container_name: crontab-guru
-    restart: always
+    restart: unless-stopped
     ports:
       - '8090:80'
 
@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
     image: michbud98/wireshark_psk:20240428
     container_name: wireshark-psk
-    restart: always
+    restart: unless-stopped
     ports:
       - '8091:80'
 
@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile
     image: michbud98/ascii-generator
     container_name: ascii-generator
-    restart: always
+    restart: unless-stopped
     ports:
       - '8092:8091'
 networks:
