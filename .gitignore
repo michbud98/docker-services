@@ -30,3 +30,6 @@ Temporary Items
 
 # htpasswd file
 htpasswd
+
+# Other
+logs
