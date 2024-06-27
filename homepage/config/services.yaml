@@ -12,7 +12,7 @@
         icon: si-openwrt-#34b4eb
         description: An OpenWRT based wifi
     - Technitium DNS:
-        href: http://rpi-nas.home.lan:5380/
+        href: http://rpi-server.home.lan:5380/
         icon: mdi-dns-#999999
         description: Local DNS server for home network
 
