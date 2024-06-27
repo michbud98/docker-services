@@ -33,3 +33,7 @@ htpasswd
 
 # Other
 logs
+homepage/config/custom.css
+homepage/config/custom.js
+homepage/config/docker.yaml
+homepage/config/kubernetes.yaml
