@@ -1,0 +1,43 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Networking:
+    - Router:
+        href: https://router.home.lan/
+        icon: si-mikrotik-#eb7434
+        description: A Mikrotik home router
+    - Wifi:
+        href: https://wifi.home.lan/
+        icon: si-openwrt-#34b4eb
+        description: An OpenWRT based wifi
+    - Technitium DNS:
+        href: http://rpi-nas.home.lan:5380/
+        icon: mdi-dns-#999999
+        description: Local DNS server for home network
+
+- Infrastructure and Data:
+    - RPI NAS:
+        href: http://rpi-nas.home.lan/
+        icon: si-raspberrypi-#c71441
+        description: Open Media Vault NAS running on RPI
+    - Home NAS:
+        href: http://nas.home.lan/
+        icon: si-openmediavault-#5DACDF
+        description: Home NAS running on a custom built server
+
+- Management:
+    - Portainer:
+        href: https://rpi-server.home.lan:9443/
+        icon: si-portainer-#13BEF9
+        description: Portainer for managing multiple Docker devices.
+
+- IoT and Smarthome:
+    - Grafana:
+        href: https://rpi-server.home.lan:3000/
+        icon: si-grafana-#F46800
+        description: Grafana
+    - Nodered:
+        href: https://rpi-server.home.lan:1880/
+        icon: si-nodered-#8F0000
+

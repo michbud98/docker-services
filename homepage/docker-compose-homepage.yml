@@ -1,0 +1,15 @@
+# https://gethomepage.dev/
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+    ports:
+      - 80:3000
+    volumes:
+      - /home/pi/Docker-Projects/docker-services/homepage/config:/app/config # Make sure your local config directory exists
+      #- /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
+    environment:
+      - PUID=1000
+      - PGID=1000
+

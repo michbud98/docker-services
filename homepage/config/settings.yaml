@@ -1,0 +1,13 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+title: LAN Homepage
+
+background: 
+  image: https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=2984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  opacity: 25
+  brightness: 60
+  
+# providers:
+#   openweathermap: openweathermapapikey
+#   weatherapi: weatherapiapikey
