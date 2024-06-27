@@ -34,7 +34,7 @@
 
 - IoT and Smarthome:
     - Grafana:
-        href: https://rpi-server.home.lan:3000/
+        href: http://rpi-server.home.lan:3000/
         icon: si-grafana-#F46800
         description: Grafana
     - Nodered:
