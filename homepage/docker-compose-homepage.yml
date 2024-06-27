@@ -10,6 +10,7 @@ services:
       - /home/pi/Docker-Projects/docker-services/homepage/config:/app/config # Make sure your local config directory exists
       #- /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
     environment:
+      # ID 1000 = PI user
       - PUID=1000
       - PGID=1000
 
