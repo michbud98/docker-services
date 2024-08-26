@@ -40,4 +40,12 @@
     - Nodered:
         href: https://rpi-server.home.lan:1880/
         icon: si-nodered-#8F0000
+    
+    - Octoprint:
+        href: http://octopi.home.lan/
+        icon: si-octoprint-#13C100
+        widget:
+          type: octoprint
+          url: http://octopi.home.lan/
+          key: 65ECE21FB45B4C1DB988DCDC19A707CD
 
