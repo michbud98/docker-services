@@ -1,3 +1,8 @@
 [submodule "ASCII-Generator"]
 	path = ASCII-Generator
 	url = git@github.com:michbud98/ASCII-Generator.site.git
+	branch = master
+[submodule "sensor-stack"]
+	path = sensor-stack
+	url = git@github.com:michbud98/cloud-intelligent-building.git
+	branch = master
