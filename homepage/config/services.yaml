@@ -38,9 +38,11 @@
         icon: si-grafana-#F46800
         description: Grafana
     - Nodered:
-        href: https://rpi-server.home.lan:1880/
+        href: http://rpi-server.home.lan:1880/
         icon: si-nodered-#8F0000
-    
+    - EspHome:
+        href: http://rpi-server.home.lan:6052/
+        icon: si-esphome-#000000
     - Octoprint:
         href: http://octopi.home.lan/
         icon: si-octoprint-#13C100
@@ -49,3 +51,16 @@
           url: http://octopi.home.lan/
           key: 65ECE21FB45B4C1DB988DCDC19A707CD
 
+- Miscellaneous:
+    - ASCII Generator:
+        href: http://rpi-server.home.lan:8092/
+        icon: mdi-alpha-a-#a83232
+        description: Grafana
+    - Crontab Guru:
+        href: http://rpi-server.home.lan:8090/
+        icon: mdi-alpha-c-#32a852
+        description: Grafana
+    - Wireshark PSK Generator:
+        href: http://rpi-server.home.lan:8091/
+        icon: si-wireshark-#1679A7
+        description: Grafana

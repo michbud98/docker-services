@@ -4,9 +4,12 @@
 
 - Developer:
     - GitHub:
-        - abbr: GH
-          icon: si-github
-          href: https://github.com/
+      - abbr: GH
+        icon: si-github
+        href: https://github.com/
+    - Homepage:
+      - icon: si-homepage
+        href: https://gethomepage.dev/latest/
 
 - Social:
     - Twitter:
@@ -16,9 +19,13 @@
 
 - Entertainment:
     - YouTube:
-        - abbr: YT
-          icon: youtube.png
-          href: https://youtube.com/
+      - abbr: YT
+        icon: youtube.png
+        href: https://youtube.com/
+    - 1d6chan:
+      - abbr: 1d6chan
+        icon: mdi-dice-d6-#b042f5
+        href: https://1d6chan.miraheze.org/
 
 - News:
     - Seznam:
