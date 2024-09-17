@@ -49,7 +49,7 @@
         widget:
           type: octoprint
           url: http://octopi.home.lan/
-          key: 65ECE21FB45B4C1DB988DCDC19A707CD
+          key: <fill>
 
 - Miscellaneous:
     - ASCII Generator:
