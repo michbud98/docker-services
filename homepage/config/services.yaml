@@ -16,7 +16,7 @@
         icon: mdi-dns-#999999
         description: Local DNS server for home network
 
-- Infrastructure and Data:
+- Data:
     - RPI NAS:
         href: http://rpi-nas.home.lan/
         icon: si-raspberrypi-#c71441
@@ -26,11 +26,15 @@
         icon: si-openmediavault-#5DACDF
         description: Home NAS running on a custom built server
 
-- Management:
+- Infrastructure Management:
     - Portainer:
         href: https://rpi-server.home.lan:9443/
         icon: si-portainer-#13BEF9
         description: Portainer for managing multiple Docker devices.
+    - Proxmox:
+        href: https://proxmox.home.lan:8006/
+        icon: si-proxmox-#E57000
+        description: Proxmox server for running virtualized Infrastructure.
 
 - IoT and Smarthome:
     - Grafana:
@@ -49,7 +53,7 @@
         widget:
           type: octoprint
           url: http://octopi.home.lan/
-          key: <fill>
+          key: 952EB4B52B814E969415EF9535C77C78
 
 - Miscellaneous:
     - ASCII Generator:
